@@ -1,30 +1,25 @@
-import { useState } from 'react'
-import ListMovie from './ListMovie.jsx'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+
+import Heading from "./components/Heading";
 
 function App() {
-  const [text, setText] = useState('')
-  const [search, setSearch] = useState('')
-  const onChangeText = (e) => {
-    setText(e.target.value)
-  }
-  const onClickSearch = () => {
-    setSearch(text)
-  }
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>Hands-on Lifecycle Methods</h1>
-      <div className="search">
-        <label>
-          Search movie
-          <input onChange={onChangeText} type="text" />
-        </label>
-        <button onClick={onClickSearch}>Search</button>
+      <Heading text="" />
+      <div className="card">
+        <button onClick={() => setCount(count + 1)}>count is {count}</button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
       </div>
-      <ListMovie search={search} />
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
