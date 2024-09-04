@@ -7,7 +7,7 @@ import "./index.css";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Products from "./pages/Products";
+import Products from "./pages/Products/Products";
 import ProductsDetail, {
   loader as productLoader,
 } from "./pages/ProductsDetail";
