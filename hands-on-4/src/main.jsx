@@ -20,6 +20,8 @@ import Root, { loader as rootLoader } from "./pages/dashboard/Root";
 import ErrorPage from "./pages/ErrorPage";
 import Celengan from "./pages/tabungan/Celengan";
 import Atm from "./pages/tabungan/Atm";
+import AddProducts from "./pages/Products/AddProduct";
+import AddProduct from "./pages/Products/AddProduct";
 
 const router = createBrowserRouter([
   // basic
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
   {
     path: "/atm",
     element: <Atm />,
+  },
+  {
+    path:'/products/dahsboard',
+    element:<Dashboard/>
+  },
+  {
+    path:'/products/add',
+    element:<AddProduct/>
   },
 
   // parameter

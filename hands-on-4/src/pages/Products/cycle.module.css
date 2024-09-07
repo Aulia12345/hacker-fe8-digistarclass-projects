@@ -64,6 +64,82 @@
     width: 100%;
     max-width: 300px;
   }
+
+  .add{
+    background: white;
+    color: #007bff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    float: right;
+  }
+
+  .add:hover{
+    cursor: pointer;
+  }
   
+/* Form */
+.formC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vw;
+}
+
+.judulForm{
+  font-size: 2rem;
+}
+
+.form{
+  
+  max-width: 600px;
+  padding: 1vw 3vw 2vw 3vw;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.isi{
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1vw;
+  color: #555;
+}
+
+.input{
+  width: 100%;
+  padding: 1vw;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.buttonCont{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+.buttonForm{
+  padding: 0.5vw 1vw;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonForm:hover {
+  background-color: #646cff;
+}
+
   
   
