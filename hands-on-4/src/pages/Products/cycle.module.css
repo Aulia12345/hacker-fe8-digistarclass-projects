@@ -72,6 +72,8 @@
     border-radius: 10px;
     margin-bottom: 10px;
     float: right;
+    border: solid ;
+    border-width: 2px;
   }
 
   .add:hover{
